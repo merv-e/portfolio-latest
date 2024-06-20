@@ -12,8 +12,7 @@ import {
   Container,
 } from "../styledComponents";
 import { bio, projects } from "../data/data";
-// import dev_photo from "../assets/dev.jpg";
-import dev_photo from "../assets/random.png";
+import dev_photo from "../assets/photo.jpg";
 
 const Home = () => (
   <main>
