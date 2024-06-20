@@ -6,6 +6,7 @@ const FooterContainer = styled.footer`
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: auto;
 `;
 
 const SocialLinks = styled.div`
@@ -28,7 +29,7 @@ const Footer = () => (
         <img src="twitter-icon.png" alt="Twitter" />
       </a>
     </SocialLinks>
-    <p>© 2024 [Your Name]. All rights reserved.</p>
+    <p>© 2024 Merve Betül Üstün. All rights reserved.</p>
   </FooterContainer>
 );
 
