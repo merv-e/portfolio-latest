@@ -48,8 +48,7 @@ const Home = () => {
         </ProjectsGrid>
         <Button href={socials.github}>View All</Button>
       </Container>
-
-      {/* Todo: Skill section might be added to Bio */}
+      
       <Container>
         <Skill />
       </Container>
