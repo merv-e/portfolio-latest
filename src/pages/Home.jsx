@@ -4,8 +4,10 @@ import { Hero, HeroContent, Bio, Button, Container } from "../styledComponents";
 import { bio } from "../utils/data";
 import dev_photo from "../assets/photo.jpg";
 import { Project, Skill } from "../components";
+import { projects } from "../utils/data";
 
 const Home = () => {
+  const featuredProjects = projects.slice(0, 4);
   return (
     <main>
       <Hero>
@@ -25,10 +27,13 @@ const Home = () => {
         </HeroContent>
       </Hero>
       <Container>
-        <Project />
+        <h2>Featured Projects</h2>
+        {featuredProjects.map((project) => (
+          <Project key={project.id} project={project} />
+        ))}
       </Container>
 
-{/* Todo: Skill section might be added to Bio */}
+      {/* Todo: Skill section might be added to Bio */}
       <Container>
         <Skill />
       </Container>
