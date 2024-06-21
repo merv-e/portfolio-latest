@@ -1,5 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { IconGrid } from "../styledComponents";
+import { socials } from "../utils/data";
+
 
 const FooterContainer = styled.footer`
   background-color: #00274d;
@@ -7,28 +13,26 @@ const FooterContainer = styled.footer`
   padding: 20px;
   text-align: center;
   margin-top: auto;
-`;
-
-const SocialLinks = styled.div`
-  img {
-    width: 30px;
-    margin: 0 10px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 `;
 
 const Footer = () => (
   <FooterContainer>
-    <SocialLinks>
-      <a href="#">
-        <img src="linkedin-icon.png" alt="LinkedIn" />
+    <IconGrid>
+      <a href={socials.linkedIn}>
+        <FaLinkedin style={{ fontSize: "1.8em", color: "black" }} />
       </a>
-      <a href="#">
-        <img src="github-icon.png" alt="GitHub" />
+      <a href={socials.github}>
+        <FaGithub style={{ fontSize: "1.8em", color: "black" }} />
       </a>
-      <a href="#">
-        <img src="twitter-icon.png" alt="Twitter" />
+      <a href={socials.x}>
+        <FaSquareXTwitter style={{ fontSize: "1.8em", color: "black" }} />
       </a>
-    </SocialLinks>
+    </IconGrid>
     <p>© 2024 Merve Betül Üstün. All rights reserved.</p>
   </FooterContainer>
 );
