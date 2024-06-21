@@ -1,10 +1,12 @@
 import React from "react";
-import { ProjectsGrid, ProjectCard } from "../styledComponents";
+import { ProjectsGrid, ProjectCard, IconGrid } from "../styledComponents";
 import { projects } from "../utils/data";
 import { Link } from "react-router-dom";
+import { GoArrowUpRight } from "react-icons/go";
+import { FaGithubAlt } from "react-icons/fa";
 
 const Project = () => {
-  const featuredProjects = projects.slice(0, 3);
+  const featuredProjects = projects.slice(0, 4);
   return (
     <>
       <h2>Featured Projects</h2>
@@ -16,14 +18,15 @@ const Project = () => {
             <h3>{project.title}</h3>
             <h5>{project.tech_stack}</h5>
             <p>{project.description}</p>
-            <Link to={project.url}>
-              <img src="" alt="" />
-              Website{" "}
-            </Link>
-            <Link to={project.githubLink}>
-              <img src="" alt="" />
-              Github{" "}
-            </Link>
+
+            <IconGrid>
+              <Link to={project.url}>
+                <GoArrowUpRight />
+              </Link>
+              <Link to={project.githubLink}>
+                <FaGithubAlt />
+              </Link>
+            </IconGrid>
             {/* </Link> */}
           </ProjectCard>
         ))}

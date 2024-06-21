@@ -58,9 +58,17 @@ export const ProjectCard = styled(motion.div)`
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   transition: box-shadow 0.3s;
+  width: 500px;
 
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover;
+    border-radius: 5px;
   }
 `;
 
@@ -124,4 +132,11 @@ export const ContactForm = styled.form`
       background-color: #5bc0eb;
     }
   }
+`;
+
+export const IconGrid = styled(motion.div)`
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 `;
