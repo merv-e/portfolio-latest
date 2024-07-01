@@ -10,7 +10,7 @@ import {
 } from "../styledComponents";
 import dev_photo from "../assets/photo.jpg";
 import { Project, Skill } from "../components";
-import { bio, projects, socials } from "../utils/data";
+import { bio, projects } from "../utils/data";
 
 const Home = () => {
   const featuredProjects = projects.slice(0, 4);
@@ -46,7 +46,7 @@ const Home = () => {
             />
           ))}
         </ProjectsGrid>
-        <Button href={socials.github}>View All</Button>
+        <Button href="/projects">View All</Button>
       </Container>
       
       <Container>

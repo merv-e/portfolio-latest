@@ -2,8 +2,12 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 export const Container = styled(motion.div)`
-  padding: 50px;
+  padding: 20px;
   text-align: center;
+
+  a {
+    margin-top: 20px;
+  }
 `;
 
 export const Hero = styled(motion.section)`
@@ -59,6 +63,9 @@ export const ProjectCard = styled(motion.div)`
   border-radius: 5px;
   transition: box-shadow 0.3s;
   width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,7 +73,7 @@ export const ProjectCard = styled(motion.div)`
 
   img {
     width: 100%;
-    height: 250px; 
+    height: 250px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -139,4 +146,10 @@ export const IconGrid = styled(motion.div)`
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+
+  img {
+    width: 200px;
+    height: auto;
+    margin: 0 10px;
+  }
 `;
