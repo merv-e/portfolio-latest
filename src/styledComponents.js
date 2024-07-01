@@ -29,10 +29,17 @@ export const HeroContent = styled(motion.div)`
     height: auto;
     border-radius: 50%;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 `;
 
 export const Bio = styled.div`
   max-width: 600px;
+  
 `;
 
 export const Button = styled(motion.a)`
