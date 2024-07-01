@@ -6,7 +6,6 @@ import myReads from "../assets/screenshots/my-reads-app.png";
 import furniFlare from "../assets/screenshots/furniFlare.jpg";
 import uncodebar from "../assets/screenshots/uncodebar.png";
 import academicNest from "../assets/screenshots/academic-nest.png";
-import markdownPreviewer from "../assets/screenshots/markdown-previewer.jpg";
 
 export const bio = {
   header: "Hello, I'm Merve",
@@ -50,23 +49,6 @@ export const projects = [
     url: "",
     githubLink: "https://github.com/merv-e/FurniFlare-store-app",
   },
-  // {
-  //   id: "adopt-a-pet",
-  //   img_src: AdoptAPet,
-  //   title: "adopt-a-pet",
-  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna ut nisi malesuada, vel fermentum arcu consectetur. Nullam vitae risus non velit consectetur venenatis. Curabitur vehicula justo at elit lacinia, sed consectetur dui aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod ligula vel est fermentum, a sollicitudin enim rutrum.adopt-a-pet",
-  //   tech_stack: "React, React Router",
-  // url: ""
-  // },
-  // {
-  //   id: "counter-app",
-  //   img_src: counterApp,
-  //   title: "counter-app",
-  //   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna ut nisi malesuada, vel fermentum arcu consectetur. Nullam vitae risus non velit consectetur venenatis. Curabitur vehicula justo at elit lacinia, sed consectetur dui aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod ligula vel est fermentum, a sollicitudin enim rutrum.counter-app",
-  //   tech_stack: "React, Redux toolkit",
-  // url: "",
-  // githubLink: "",
-  // },
   {
     id: "my-reads",
     img_src: myReads,
