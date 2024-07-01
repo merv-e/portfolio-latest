@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -23,13 +22,13 @@ const FooterContainer = styled.footer`
 const Footer = () => (
   <FooterContainer>
     <IconGrid>
-      <a href={socials.linkedIn}>
+      <a href={socials.linkedIn} target="_blank">
         <FaLinkedin style={{ fontSize: "1.8em", color: "black" }} />
       </a>
-      <a href={socials.github}>
+      <a href={socials.github} target="_blank">
         <FaGithub style={{ fontSize: "1.8em", color: "black" }} />
       </a>
-      <a href={socials.x}>
+      <a href={socials.x} target="_blank">
         <FaSquareXTwitter style={{ fontSize: "1.8em", color: "black" }} />
       </a>
     </IconGrid>

@@ -9,11 +9,6 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #fff;
- ${'' /* TO HAVE A FIXED NAVBAR */}
-  ${'' /* position: fixed;
-  top: 0;
-  width: 100%;
-  overflow: hidden; */}
 `;
 
 const NavLinks = styled.ul`

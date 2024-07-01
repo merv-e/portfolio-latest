@@ -2,7 +2,6 @@ import React from "react";
 import { Project } from "../components";
 import { projects, socials } from "../utils/data";
 import { Button, Container, ProjectsGrid } from "../styledComponents";
-import { Link } from "react-router-dom";
 
 const Projects = () => (
   <>
@@ -13,7 +12,9 @@ const Projects = () => (
           <Project key={project.id} project={project} />
         ))}
       </ProjectsGrid>
-      <Button href={socials.github}>Visit Github</Button>
+      <Button href={socials.github} target="_blank">
+        Visit Github
+      </Button>
     </Container>
   </>
 );

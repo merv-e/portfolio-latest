@@ -11,6 +11,7 @@ import {
 import dev_photo from "../assets/photo.jpg";
 import { Project, Skill } from "../components";
 import { bio, projects } from "../utils/data";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const featuredProjects = projects.slice(0, 4);
@@ -28,7 +29,9 @@ const Home = () => {
           <Bio>
             <h1>{bio.header}</h1>
             <p>{bio.para}</p>
-            <Button href="/about">About Me</Button>
+            <Link to="/about">
+              <Button>About Me</Button>
+            </Link>
           </Bio>
         </HeroContent>
       </Hero>
@@ -46,9 +49,11 @@ const Home = () => {
             />
           ))}
         </ProjectsGrid>
-        <Button href="/projects">View All</Button>
+        <Link to="/projects">
+          <Button> View All</Button>
+        </Link>
       </Container>
-      
+
       <Container>
         <Skill />
       </Container>
