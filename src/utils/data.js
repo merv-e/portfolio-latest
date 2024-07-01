@@ -46,7 +46,7 @@ export const projects = [
     title: "FurniFlare",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna ut nisi malesuada, vel fermentum arcu consectetur. Nullam vitae risus non velit consectetur venenatis. Curabitur vehicula justo at elit lacinia, sed consectetur dui aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod ligula vel est fermentum, a sollicitudin enim rutrum.FurniFlare",
-    tech_stack: "React, Redux toolkit, React Router, TailwindCSS, DailyUI",
+    tech_stack: "React, Redux toolkit, React Router, TailwindCSS, DaisyUI",
     url: "",
     githubLink: "https://github.com/merv-e/FurniFlare-store-app",
   },
