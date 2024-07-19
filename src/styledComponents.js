@@ -39,7 +39,6 @@ export const HeroContent = styled(motion.div)`
 
 export const Bio = styled.div`
   max-width: 600px;
-  
 `;
 
 export const Button = styled(motion.a)`
@@ -105,58 +104,45 @@ export const SkillItem = styled(motion.div)`
   }
 `;
 
-export const ContactForm = styled.form`
+export const IconGrid = styled(motion.div)`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
 
-  label {
-    align-self: flex-start;
-    margin-bottom: 5px;
+  img {
+    width: 250px;
+    height: auto;
+    margin: 0 15px;
   }
 
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 5px;
-  }
-
-  textarea {
-    height: 150px;
-    resize: vertical;
-  }
-
-  button {
-    align-self: flex-start;
+  a {
+    width: 100px;
+    display: inline-block;
     padding: 10px 20px;
     background-color: #00274d;
     color: #fff;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #5bc0eb;
+      background-color: #ff;
+      color: "black"
     }
   }
 `;
 
-export const IconGrid = styled(motion.div)`
+export const StatusContainer = styled.div`
   display: flex;
-  gap: 20px;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 20px;
+  padding: 150px 50px;
+  color: ${(props) => (props.error ? "red" : "#00274d")};
 
-  img {
-    width: 200px;
-    height: auto;
-    margin: 0 10px;
+  p {
+    font-size: xx-large;
   }
 `;
