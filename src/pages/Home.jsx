@@ -10,11 +10,14 @@ import {
 } from "../styledComponents";
 import dev_photo from "../assets/photo.jpg";
 import { Project, Skill } from "../components";
-import { bio, projects } from "../utils/data";
+import { aboutMe, projects } from "../utils/data";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   const featuredProjects = projects.slice(0, 4);
+
+  const { title, bio } = aboutMe;
+
   return (
     <>
       <Hero>
@@ -24,17 +27,17 @@ const Home = () => {
             alt="Developer Photo"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 2 }}
           />
           <Bio>
-            <h1>{bio.header}</h1>
-            <p>{bio.para}</p>
-            <Link to="/about">
-              <Button>About Me</Button>
-            </Link>
+            <h1>{title}</h1>
+            <p>{bio}</p>
           </Bio>
         </HeroContent>
       </Hero>
+      <Container>
+        <Skill />
+      </Container>
       <Container>
         <h2>Featured Projects</h2>
         <ProjectsGrid>
@@ -54,9 +57,6 @@ const Home = () => {
         </Link>
       </Container>
 
-      <Container>
-        <Skill />
-      </Container>
     </>
   );
 };

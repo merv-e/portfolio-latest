@@ -1,5 +1,5 @@
 import React from "react";
-import { ProjectsGrid, ProjectCard, IconGrid } from "../styledComponents";
+import { ProjectCard, IconGrid, Button } from "../styledComponents";
 import { GoArrowUpRight } from "react-icons/go";
 import { FaGithubAlt } from "react-icons/fa";
 
@@ -25,13 +25,13 @@ const Project = (props) => {
           <p>{project.description}</p>
 
           <IconGrid>
-            <a href={project.githubLink} target="_blank">
+            <Button href={project.githubLink} target="_blank">
               <FaGithubAlt />
-            </a>
+            </Button>
             {project.url && (
-              <a href={project.url} target="_blank">
+              <Button href={project.url} target="_blank">
                 <GoArrowUpRight />
-              </a>
+              </Button>
             )}
           </IconGrid>
         </>
