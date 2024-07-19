@@ -19,7 +19,7 @@ export const skills = [
   { id: 7, name: "tailwindCss" },
   { id: 8, name: "typeScript" },
   { id: 9, name: "jest" },
-  { id: 10, name: "jquery " },
+  { id: 10, name: "jquery" },
 ];
 
 export const socials = [
