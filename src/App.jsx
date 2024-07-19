@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import GlobalStyles from "./GlobalStyles";
-import { Home, About, Projects, Contact } from "./pages";
+import { Home, Projects } from "./pages";
 import { Footer, Header } from "./components";
 
 function App() {
@@ -15,9 +15,7 @@ function App() {
         <main style={{ flex: 1 }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
