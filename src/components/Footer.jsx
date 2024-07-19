@@ -26,20 +26,19 @@ const icons = {
 };
 
 const Footer = () => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredIcon, setHoveredIcon] = useState(null);
 
-  const iconStyle = {
+  const iconStyle = (id) => ({
     fontSize: "1.8em",
-    color: isHovered ? "#000401" : "wheat",
+    color: hoveredIcon === id ? "#000401" : "wheat",
     transition: "color 0.3s ease",
-  };
+  });
 
   return (
     <FooterContainer>
       <IconGrid>
         {socials.map((social) => {
           const IconComponent = icons[social.id];
-
           if (!IconComponent) {
             console.error(`Icon component for ${social.id} is not found.`);
             return null;
@@ -48,14 +47,14 @@ const Footer = () => {
           return (
             <a
               key={social.id}
-              href={socials.linkedIn}
+              href={social.link}
               target="_blank"
               rel="noopener noreferrer"
             >
               <IconComponent
-                style={iconStyle}
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                style={iconStyle(social.id)}
+                onMouseEnter={() => setHoveredIcon(social.id)}
+                onMouseLeave={() => setHoveredIcon(null)}
               />
             </a>
           );
