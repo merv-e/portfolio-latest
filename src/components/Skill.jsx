@@ -10,6 +10,7 @@ import {
   SiJest,
   SiJquery,
 } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Skill = () => {
   const icons = {
@@ -38,17 +39,24 @@ const Skill = () => {
       <SkillsGrid>
         {skills.map((skill) => {
           const TechIcon = icons[skill.name];
-          console.log(TechIcon);
 
           if (!TechIcon) {
             console.error(`Icon component for ${skill.id} is not found.`);
             return null;
           }
-
           return (
             <SkillItem key={skill.id}>
-              <TechIcon style={iconStyle(skill.id)} />
-              <p>{skill.name}</p>
+              <motion.div
+                whileHover={{ scale: 1.5, rotate: 360 }}
+                whileTap={{
+                  scale: 0.8,
+                  rotate: -90,
+                  borderRadius: "100%",
+                }}
+              >
+                <TechIcon style={iconStyle(skill.id)} />
+              </motion.div>
+              <p>{skill.name[0].toUpperCase() + skill.name.slice(1)}</p>
             </SkillItem>
           );
         })}
