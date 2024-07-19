@@ -7,15 +7,15 @@ import furniFlare from "../assets/screenshots/furniFlare.jpg";
 import uncodebar from "../assets/screenshots/uncodebar.png";
 import academicNest from "../assets/screenshots/academic-nest.png";
 
-export const bio = {
-  header: "Hello, I'm Merve",
-  para: " Frontend Developer passionate about creating interactive and responsive web applications.",
-};
-
 export const socials = {
   github: "https://github.com/merv-e",
   linkedIn: "https://www.linkedin.com/in/mbustun/",
-  x: "",
+  x: "https://x.com/",
+};
+
+export const aboutMe = {
+  title: "About Me",
+  bio: "Hi, I’m Merve, a passionate web developer specializing in frontend technologies. With a solid background in both English education and marine science, I’ve transitioned into the tech world to bring creative and efficient solutions to front-end development challenges.",
 };
 
 export const projects = [
@@ -24,7 +24,7 @@ export const projects = [
     img_src: uncodebar,
     title: "Uncodebar",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna ut nisi malesuada, vel fermentum arcu consectetur. Nullam vitae risus non velit consectetur venenatis. Curabitur vehicula justo at elit lacinia, sed consectetur dui aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod ligula vel est fermentum, a sollicitudin enim rutrum.uncodebar",
+      "A mini-website where you can find information about uncodebar events.",
     tech_stack: "HTML5, TailwindCSS",
     url: "https://uncodebar.com/",
     githubLink: "https://github.com/codebar/uncodebar-microsite",
@@ -43,8 +43,7 @@ export const projects = [
     id: "furni-flare-store-app",
     img_src: furniFlare,
     title: "FurniFlare",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed faucibus magna ut nisi malesuada, vel fermentum arcu consectetur. Nullam vitae risus non velit consectetur venenatis. Curabitur vehicula justo at elit lacinia, sed consectetur dui aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras euismod ligula vel est fermentum, a sollicitudin enim rutrum.FurniFlare",
+    description: "Come and find the items you need in our cozy store!",
     tech_stack: "React, Redux toolkit, React Router, TailwindCSS, DaisyUI",
     url: "",
     githubLink: "https://github.com/merv-e/FurniFlare-store-app",
@@ -58,26 +57,6 @@ export const projects = [
     tech_stack: "React",
     url: "https://my-booooks.netlify.app/",
     githubLink: "https://github.com/merv-e/my-reads",
-  },
-  {
-    id: "employee_poll_app",
-    img_src: empPollApp,
-    title: "Employee Poll App",
-    description:
-      "Would you like your employers to work more efficiently as a team while having fun? It's possible with this app! To have the option to create, vote polls etc?",
-    tech_stack: "Bootstrap, React, Redux, Jest",
-    url: "",
-    githubLink: "https://github.com/merv-e/employee-polls-project",
-  },
-  {
-    id: "cont_fusion_bistro",
-    img_src: contFusionBistro,
-    title: "Continental Fusion Bistro",
-    description:
-      "This application allows you to seamlessly add and remove meals from your cart, mimicking the experience of ordering food online. Once you have added the desired meals, you can review your selections by clicking on 'Your Cart'. To explore more, click on the image.",
-    tech_stack: "React, CSS, Firebase",
-    url: "",
-    githubLink: "",
   },
   {
     id: "movie_finder",
@@ -99,4 +78,25 @@ export const projects = [
     url: "https://academic-nest.netlify.app/",
     githubLink: "https://github.com/merv-e/academic-nest",
   },
+  {
+    id: "employee_poll_app",
+    img_src: empPollApp,
+    title: "Employee Poll App",
+    description:
+    "Would you like your employers to work more efficiently as a team while having fun? It's possible with this app! To have the option to create, vote polls etc?",
+    tech_stack: "Bootstrap, React, Redux, Jest",
+    url: "",
+    githubLink: "https://github.com/merv-e/employee-polls-project",
+  },
+  {
+    id: "cont_fusion_bistro",
+    img_src: contFusionBistro,
+    title: "Continental Fusion Bistro",
+    description:
+    "This application allows you to seamlessly add and remove meals from your cart, mimicking the experience of ordering food online. Once you have added the desired meals, you can review your selections by clicking on 'Your Cart'. To explore more, click on the image.",
+    tech_stack: "React, CSS, Firebase",
+    url: "",
+    githubLink: "https://github.com/merv-e/continental-fusion-bistro",
+  },
+  
 ];
