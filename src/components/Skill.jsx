@@ -1,19 +1,57 @@
 import React from "react";
 import { SkillsGrid, SkillItem } from "../styledComponents";
+import { skills } from "../utils/data";
+import { FaHtml5, FaCss3, FaReact, FaBootstrap } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import {
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+  SiJest,
+  SiJquery,
+} from "react-icons/si";
 
 const Skill = () => {
+  const icons = {
+    html5: FaHtml5,
+    css3: FaCss3,
+    javaScript: TbBrandJavascript,
+    react: FaReact,
+    redux: SiRedux,
+    bootstrap: FaBootstrap,
+    tailwindCss: SiTailwindcss,
+    typeScript: SiTypescript,
+    jest: SiJest,
+    jquery: SiJquery,
+  };
+
+  const iconStyle = () => ({
+    fontSize: "1.8em",
+    color: "#FC440F",
+    transition: "color 0.3s ease",
+    width: "120px",
+  });
+
   return (
     <>
       <h2>Skills Overview</h2>
       <SkillsGrid>
-        <SkillItem>
-          <img src="html5-icon.png" alt="HTML5" />
-          <p>HTML5</p>
-        </SkillItem>
-        <SkillItem>
-          <img src="css3-icon.png" alt="CSS3" />
-          <p>CSS3</p>
-        </SkillItem>
+        {skills.map((skill) => {
+          const TechIcon = icons[skill.name];
+          console.log(TechIcon);
+
+          if (!TechIcon) {
+            console.error(`Icon component for ${skill.id} is not found.`);
+            return null;
+          }
+
+          return (
+            <SkillItem key={skill.id}>
+              <TechIcon style={iconStyle(skill.id)} />
+              <p>{skill.name}</p>
+            </SkillItem>
+          );
+        })}
       </SkillsGrid>
     </>
   );

@@ -6,12 +6,36 @@ import myReads from "../assets/screenshots/my-reads-app.png";
 import furniFlare from "../assets/screenshots/furniFlare.jpg";
 import uncodebar from "../assets/screenshots/uncodebar.png";
 import academicNest from "../assets/screenshots/academic-nest.png";
+// import markdownPreviewer from "../assets/screenshots/markdown-previewer.jpg";
 
-export const socials = {
-  github: "https://github.com/merv-e",
-  linkedIn: "https://www.linkedin.com/in/mbustun/",
-  x: "https://x.com/",
-};
+
+export const skills = [
+  { id: 1, name: "html5" },
+  { id: 2, name: "css3" },
+  { id: 3, name: "javaScript" },
+  { id: 4, name: "react" },
+  { id: 5, name: "redux" },
+  { id: 6, name: "bootstrap" },
+  { id: 7, name: "tailwindCss" },
+  { id: 8, name: "typeScript" },
+  { id: 9, name: "jest" },
+  { id: 10, name: "jquery " },
+];
+
+export const socials = [
+  {
+    id: "github",
+    link: "https://github.com/merv-e",
+  },
+  {
+    id: "linkedIn",
+    link: "https://www.linkedin.com/in/mbustun/",
+  },
+  {
+    id: "twitter",
+    link: "https://x.com/",
+  },
+];
 
 export const aboutMe = {
   title: "About Me",
@@ -83,7 +107,7 @@ export const projects = [
     img_src: empPollApp,
     title: "Employee Poll App",
     description:
-    "Would you like your employers to work more efficiently as a team while having fun? It's possible with this app! To have the option to create, vote polls etc?",
+      "Would you like your employers to work more efficiently as a team while having fun? It's possible with this app! To have the option to create, vote polls etc?",
     tech_stack: "Bootstrap, React, Redux, Jest",
     url: "",
     githubLink: "https://github.com/merv-e/employee-polls-project",
@@ -93,10 +117,11 @@ export const projects = [
     img_src: contFusionBistro,
     title: "Continental Fusion Bistro",
     description:
-    "This application allows you to seamlessly add and remove meals from your cart, mimicking the experience of ordering food online. Once you have added the desired meals, you can review your selections by clicking on 'Your Cart'. To explore more, click on the image.",
+      "This application allows you to seamlessly add and remove meals from your cart, mimicking the experience of ordering food online. Once you have added the desired meals, you can review your selections by clicking on 'Your Cart'. To explore more, click on the image.",
     tech_stack: "React, CSS, Firebase",
     url: "",
     githubLink: "https://github.com/merv-e/continental-fusion-bistro",
   },
   
 ];
+

@@ -9,6 +9,22 @@ const GlobalStyles = createGlobalStyle`
     color: #333;
   }
 
+  h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    color: #222; 
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+
+  p {
+    line-height: 2;
+    font-size: 1rem; 
+    font-family: open-sans; 
+  }
+
   #root {
     display: flex;
     flex-direction: column;

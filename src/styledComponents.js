@@ -39,6 +39,7 @@ export const HeroContent = styled(motion.div)`
 
 export const Bio = styled.div`
   max-width: 600px;
+  font-weight: 500;
 `;
 
 export const Button = styled(motion.a)`
@@ -75,7 +76,7 @@ export const ProjectCard = styled(motion.div)`
   justify-content: space-between;
 
   &:hover {
-    box-shadow: 0 4px 8px #79AEA3;
+    box-shadow: 0 4px 8px #79aea3;
   }
 
   img {
@@ -99,6 +100,10 @@ export const SkillItem = styled(motion.div)`
   border: 1px solid #e0e0e0;
   border-radius: 5px;
   transition: box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-irems: center;
 
   &:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -129,7 +134,7 @@ export const IconGrid = styled(motion.div)`
 
     &:hover {
       background-color: #ff;
-      color: "black"
+      color: "black";
     }
   }
 `;
