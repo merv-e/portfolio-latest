@@ -60,6 +60,7 @@ export const ProjectsGrid = styled(motion.div)`
   gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 2rem;
 `;
 
 export const ProjectCard = styled(motion.div)`
@@ -74,7 +75,7 @@ export const ProjectCard = styled(motion.div)`
   justify-content: space-between;
 
   &:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px #79AEA3;
   }
 
   img {
