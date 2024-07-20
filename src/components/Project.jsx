@@ -9,7 +9,11 @@ const Project = (props) => {
     <ProjectCard>
       {prj_title && image ? (
         <>
-          <a href={prj_url ? prj_url : prj_github} target="_blank">
+          <a
+            href={prj_url ? prj_url : prj_github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={image} alt={prj_title} />
           </a>
           <h3>{prj_title}</h3>
@@ -17,7 +21,11 @@ const Project = (props) => {
         </>
       ) : (
         <>
-          <a href={project.url ? project.url : project.github} target="_blank">
+          <a
+            href={project.url ? project.url : project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={project.img_src} alt={project.title} />
           </a>
           <h3>{project.title}</h3>
@@ -25,13 +33,17 @@ const Project = (props) => {
           <p>{project.description}</p>
 
           <IconGrid>
-            <Button href={project.githubLink} target="_blank">
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithubAlt />
-            </Button>
+            </a>
             {project.url && (
-              <Button href={project.url} target="_blank">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
                 <GoArrowUpRight />
-              </Button>
+              </a>
             )}
           </IconGrid>
         </>

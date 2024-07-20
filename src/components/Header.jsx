@@ -9,6 +9,11 @@ const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 `;
 
 const NavLinks = styled.ul`

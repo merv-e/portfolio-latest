@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 export const Container = styled(motion.div)`
   padding: 20px;
   text-align: center;
+  margin-top: 80px;
+  position: relative;
 
   a {
     margin-top: 20px;
@@ -16,18 +18,26 @@ export const Hero = styled(motion.section)`
   justify-content: center;
   padding: 50px;
   background-color: #f7f7f7;
+  position: relative;
+  margin-top: 80px;
+  height: 80vh;
 `;
 
 export const HeroContent = styled(motion.div)`
   max-width: 1200px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  justify-content: space-around;
+   gap: 5rem;
 
   img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
+  }
+
+  p {
+    font-size: 1.25rem;
   }
 
   @media (max-width: 768px) {
