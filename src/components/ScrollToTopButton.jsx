@@ -26,8 +26,11 @@ const ScrollToTopButton = () => {
     opacity: 0.7;
     scale: 0.8
 
-    &: focus {
+    &: hover {
       background-color: #0056b3;
+    }
+
+    &: focus {
       outline: none;
       opacity: 1;
     }
