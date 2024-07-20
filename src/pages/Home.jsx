@@ -30,7 +30,6 @@ const StyledLink = styled(Link)`
 
 const Home = () => {
   const featuredProjects = projects.slice(0, 4);
-
   const { title, bio } = aboutMe;
 
   return (
@@ -57,14 +56,7 @@ const Home = () => {
         <h2>Featured Projects</h2>
         <ProjectsGrid>
           {featuredProjects.map((project) => (
-            <Project
-              key={project.id}
-              prj_title={project.title}
-              image={project.img_src}
-              prj_url={project.url}
-              prj_github={project.githubLink}
-              tech_stck={project.tech_stack}
-            />
+            <Project key={project.id} project={project} />
           ))}
         </ProjectsGrid>
         <StyledLink to="/projects">View All</StyledLink>

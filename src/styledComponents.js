@@ -144,22 +144,7 @@ export const IconGrid = styled(motion.div)`
     transition: background-color 0.3s;
 
     &:hover {
-      background-color: #ff;
-      color: "black";
+      color: "#000";
     }
-  }
-`;
-
-export const StatusContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  padding: 150px 50px;
-  color: ${(props) => (props.error ? "red" : "#00274d")};
-
-  p {
-    font-size: xx-large;
   }
 `;

@@ -5,15 +5,15 @@ import { Button, Container, ProjectsGrid } from "../styledComponents";
 
 const Projects = () => (
   <Container>
-    <h2>My Projects</h2>
+    <h1 style={{ margin: "100px 0 50px 0" }}>My Projects</h1>
     <ProjectsGrid>
       {projects.map((project) => (
         <Project key={project.id} project={project} />
       ))}
     </ProjectsGrid>
-    <a href={socials.github} target="_blank" rel="noopener noreferrer">
+    <Button href={socials[0].link} target="_blank" rel="noopener noreferrer">
       Visit Github
-    </a>
+    </Button>
   </Container>
 );
 
