@@ -1,6 +1,10 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
+  html {
+  scroll-behavior: smooth;
+  }
+  
   body, html {
     height: 100%;
     margin: 0;
@@ -22,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
   p {
     line-height: 2;
     font-size: 1rem; 
-    font-family: open-sans; 
+    font-family: open-sans; ${"" /* is this correct???? */}
   }
 
   #root {
@@ -34,6 +38,7 @@ const GlobalStyles = createGlobalStyle`
   main {
     flex: 1;
   }
+
 `;
 
 export default GlobalStyles;
