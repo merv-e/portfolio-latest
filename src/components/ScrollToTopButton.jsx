@@ -25,18 +25,27 @@ const ScrollToTopButton = () => {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.3s;
 
-    button: hover {
+    &: hover {
       background-color: #0056b3;
     }
 
-    button: focus {
+    &: focus {
       outline: none;
     }
   `;
 
   return (
     <div>
-      <ScrollToTopBtn onClick={scrollToTop}>↑</ScrollToTopBtn>
+      <ScrollToTopBtn
+        onClick={scrollToTop}
+        // initial={{ opacity: 0, scale: 0.8 }}
+        // animate={{ opacity: 1, scale: 1 }}
+        // transition={{ duration: 0.3 }}
+        // whileHover={{ scale: 1.1 }}
+        // whileTap={{ scale: 0.9 }}
+      >
+        ↑
+      </ScrollToTopBtn>
     </div>
   );
 };

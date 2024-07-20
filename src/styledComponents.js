@@ -144,7 +144,8 @@ export const IconGrid = styled(motion.div)`
     transition: background-color 0.3s;
 
     &:hover {
-      color: "#000";
+      background-color: #ff;
+      color: "black";
     }
   }
 `;
