@@ -44,6 +44,7 @@ export const HeroContent = styled(motion.div)`
     flex-direction: column;
     text-align: center;
     gap: 20px;
+    margin-top: 200px;
   }
 `;
 
